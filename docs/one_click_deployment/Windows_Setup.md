@@ -49,10 +49,10 @@ mkdocs build
 ```
 
 
-
-
-
-
+```
+mkdocs gh-deploy
+```
+会在GitHub项目上创建一个gh-pages分支，并执行mkdocs build命令，然后将当前目录中的site目录下的内容推送到远程的gh-pages分支
 
 
 
