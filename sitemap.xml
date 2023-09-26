@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
+         <loc>https://github.com/Risingrode/USTL_ACM/</loc>
+         <lastmod>2023-09-26</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://github.com/Risingrode/USTL_ACM/zh/"/>
+         
+    </url>
+    <url>
          <loc>https://github.com/Risingrode/USTL_ACM/Home/</loc>
          <lastmod>2023-09-26</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="zh" href="https://github.com/Risingrode/USTL_ACM/zh/Home/"/>
-         
          
     </url>
     <url>
@@ -14,22 +20,19 @@
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="zh" href="https://github.com/Risingrode/USTL_ACM/zh/Home/Windows_Setup/"/>
          
+    </url>
+    <url>
+         <loc>https://github.com/Risingrode/USTL_ACM/Markdown/latex/</loc>
+         <lastmod>2023-09-26</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://github.com/Risingrode/USTL_ACM/zh/Markdown/latex/"/>
          
     </url>
     <url>
-         <loc>https://github.com/Risingrode/USTL_ACM/specification/markdown/latex/</loc>
+         <loc>https://github.com/Risingrode/USTL_ACM/Markdown/markdown/</loc>
          <lastmod>2023-09-26</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="zh" href="https://github.com/Risingrode/USTL_ACM/zh/specification/markdown/latex/"/>
-         
-         
-    </url>
-    <url>
-         <loc>https://github.com/Risingrode/USTL_ACM/specification/markdown/markdown/</loc>
-         <lastmod>2023-09-26</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="zh" href="https://github.com/Risingrode/USTL_ACM/zh/specification/markdown/markdown/"/>
-         
+         <xhtml:link rel="alternate" hreflang="zh" href="https://github.com/Risingrode/USTL_ACM/zh/Markdown/markdown/"/>
          
     </url>
 </urlset>
