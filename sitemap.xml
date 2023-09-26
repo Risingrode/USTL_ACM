@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://github.com/Risingrode/USTL_ACM/</loc>
+         <loc>https://github.com/Risingrode/USTL_ACM/Home/</loc>
          <lastmod>2023-09-26</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="zh" href="https://github.com/Risingrode/USTL_ACM/zh/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://github.com/Risingrode/USTL_ACM/zh/Home/"/>
          
          
     </url>
     <url>
-         <loc>https://github.com/Risingrode/USTL_ACM/one_click_deployment/Windows_Setup/</loc>
+         <loc>https://github.com/Risingrode/USTL_ACM/Home/Windows_Setup/</loc>
          <lastmod>2023-09-26</lastmod>
          <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="zh" href="https://github.com/Risingrode/USTL_ACM/zh/one_click_deployment/Windows_Setup/"/>
+         <xhtml:link rel="alternate" hreflang="zh" href="https://github.com/Risingrode/USTL_ACM/zh/Home/Windows_Setup/"/>
          
          
     </url>
