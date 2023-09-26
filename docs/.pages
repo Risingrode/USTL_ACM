@@ -1,0 +1,7 @@
+nav:
+  - index.md
+  - index.en.md
+  - specification
+  - ...
+
+collapse_single_pages: true

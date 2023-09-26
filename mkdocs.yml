@@ -1,0 +1,105 @@
+site_name: USTL-ACM算法合集
+site_url: https://github.com/Risingrode/USTL_ACM
+
+repo_name: USTL-ACM算法合集
+repo_url: https://github.com/Risingrode/USTL_ACM
+
+edit_uri: blob/main/docs/
+
+# 主题设置
+theme:
+  name: material
+  language: zh
+  custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: 暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: 亮色模式
+  features:
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=nav#navigation-tabs
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/?h=footer
+    - navigation.footer
+    - navigation.top
+    - navigation.sections
+    # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/?h=edit#code-actions
+    - content.action.edit
+    - content.tabs.link
+
+
+# 版权
+copyright: This website follows CC BY-SA 4.0
+
+# 插件
+plugins:
+  - awesome-pages:
+      strict: false
+  - i18n:
+      default_language: zh
+      material_alternate: true
+      languages:
+        zh:
+          name: 简体中文
+          build: true
+        en:
+          name: English
+          build: false
+      nav_translations:
+        zh:
+          # 格式是：文件夹名字 + 中文替换名
+          One click deployment : 一键部署
+          Markdown : Markdown 规范
+          Preface : 前言
+          Specification : 规范
+
+        # en:
+        #   前言 : Preface
+        #   规范 : Specification
+        #   PR规范 : PR Specification
+        #   中英混排 : Chinese With English
+        #   写作模板 : Writing Template
+        #   软件 : Software
+        #   插件 : Plugins
+        #   平台 : Platform
+        #   一键部署 : One-Click Deployment
+        #   开源框架 : Opensource Frame 
+        #   大语言模型 : Large Language Model
+        #   包管理器 : Package manager
+  - search:
+      lang: ja
+
+# LaTeX支持
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.highlight:
+      use_pygments: true
+  - footnotes
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
