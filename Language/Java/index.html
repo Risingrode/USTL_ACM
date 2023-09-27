@@ -16,6 +16,8 @@
         <link rel="prev" href="../Python/">
       
       
+        <link rel="next" href="../../Problem/LeetCode/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
     
@@ -274,6 +276,22 @@
     <li class="md-tabs__item">
       <a href="../C%2B%2B/" class="md-tabs__link md-tabs__link--active">
         语言
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Problem/LeetCode/" class="md-tabs__link">
+        刷题
       </a>
     </li>
   
@@ -754,6 +772,55 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          刷题
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          刷题
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Problem/LeetCode/" class="md-nav__link">
+        LeetCode
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -800,17 +867,17 @@
 <blockquote>
 <p>代码由<code>lmh</code>同学提供，我只是复习总结而已。</p>
 </blockquote>
-<p>代码下载链接：https://pan.baidu.com/s/1l4r0jbeZ-L-PNO98wOXAPw?pwd=1111 
+<p>代码下载链接：https://pan.baidu.com/s/1l4r0jbeZ-L-PNO98wOXAPw?pwd=1111
 提取码：1111</p>
 <h1 id="scanner">输入(Scanner)</h1>
 <div class="highlight"><pre><span></span><code><span class="c1">//创建键盘录入对象Scanner</span>
-<span class="n">Scanner</span><span class="w"> </span><span class="n">sc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="n">Scanner</span><span class="w"> </span><span class="n">sc</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
 <span class="c1">//通过Scanner对象调用方法，赋值给变量</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">year</span><span class="o">=</span><span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
 <span class="c1">//判断输入的是不是int类型,返回值是bool</span>
-<span class="n">sc</span><span class="p">.</span><span class="na">hasNextInt</span><span class="p">();</span>
+<span class="w">        </span><span class="n">sc</span><span class="p">.</span><span class="na">hasNextInt</span><span class="p">();</span>
 <span class="c1">// 释放资源</span>
-<span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<span class="w">        </span><span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
 </code></pre></div>
 <blockquote>
 <p>scanner可以输入各种类型数据，看java的数据提示即可</p>
@@ -831,7 +898,8 @@
 <h2 id="nextlinenextnextintnextnextintnextline">先使用nextLine再使用next()、nextInt()等没问题，但是先使用next()和nextInt()等之后就不可以再紧跟nextLine使用。（这一点很重要！！！）</h2>
 <ol>
 <li>这是因为next()等这些方法读取结束后会紧跟一个回车符，而nextLine会直接读取到这个回车符，这就导致出现我们还没有来得及输入我们想要输入的数据，nextLine就以为我们已经输入完了这样的情况！</li>
-<li>解决办法：我们直接在next()使用后加两个nextLine()就OK了，这样第一个nextLine()就会当一个‘替死鬼’，第二个nextLine()我们就可以输入自己想要输入的数据啦！</li>
+<li>解决办法：我们直接在next()使用后加两个nextLine()就OK了，这样第一个nextLine()就会当一个‘替死鬼’，第二个nextLine()
+   我们就可以输入自己想要输入的数据啦！</li>
 </ol>
 <h1 id="systemoutprintln">输出(System.out.println)</h1>
 <h2 id="println">println</h2>
@@ -854,34 +922,38 @@
 <p><strong>不访问实例变量：</strong> 静态方法不能直接访问类的实例变量（非静态成员变量），因为它们没有与任何特定实例相关联。但是，它们可以访问静态成员变量，因为静态成员变量也与类相关联。</p>
 </li>
 <li>
-<p><strong>常用于工具方法：</strong> 静态方法通常用于定义工具方法，这些方法独立于类的实例，执行某些通用操作，例如数学计算、文件操作、字符串处理等。例如，<code>Math</code> 类中的所有方法都是静态方法，因为它们执行数学运算而无需创建 <code>Math</code> 的实例。</p>
+<p><strong>常用于工具方法：</strong>
+   静态方法通常用于定义工具方法，这些方法独立于类的实例，执行某些通用操作，例如数学计算、文件操作、字符串处理等。例如，<code>Math</code>
+   类中的所有方法都是静态方法，因为它们执行数学运算而无需创建 <code>Math</code> 的实例。</p>
 </li>
 <li>
 <p><strong>静态块：</strong> 静态方法可以包含静态块（static block），静态块在类被加载时执行，通常用于初始化静态成员变量或执行其他一次性的初始化工作。</p>
 </li>
 </ol>
-<p><div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyClass</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyClass</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">static</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="c1">// 静态块中的代码在类加载时执行</span>
 <span class="w">        </span><span class="c1">// 用于初始化静态成员变量等</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-6. <strong>全局访问点：</strong> 静态方法可以提供一个全局的访问点，使得其他类和代码可以轻松地调用这些方法，而不必关心类的实例化和细节。</p>
+<ol>
+<li><strong>全局访问点：</strong> 静态方法可以提供一个全局的访问点，使得其他类和代码可以轻松地调用这些方法，而不必关心类的实例化和细节。</li>
+</ol>
 <p>需要注意的是，静态方法不能访问非静态方法和非静态变量，因为它们不依赖于类的实例。另外，静态方法不能被重写，因为它们是与类直接关联的，而不是与实例关联的。
 总之，静态方法用就完了，无需创建实例。</p>
 <h2 id="stringvalueofnum"><code>String.valueOf(num)</code></h2>
 <p>用于将不同类型的数据转换为字符串类型。它的作用是将给定的数据转换为字符串，无论数据的原始类型是什么。</p>
 <h1 id="_2">数组</h1>
 <h2 id="_3">复制</h2>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mi">11</span><span class="p">,</span><span class="w"> </span><span class="mi">22</span><span class="p">,</span><span class="w"> </span><span class="mi">33</span><span class="p">,</span><span class="w"> </span><span class="mi">44</span><span class="p">,</span><span class="w"> </span><span class="mi">55</span><span class="w"> </span><span class="p">};</span>
-<span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">newArr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Arrays</span><span class="p">.</span><span class="na">copyOf</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">newArr</span><span class="p">));</span>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="o">[]</span><span class="n">arr</span><span class="o">=</span><span class="p">{</span><span class="mi">11</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">33</span><span class="p">,</span><span class="mi">44</span><span class="p">,</span><span class="mi">55</span><span class="p">};</span>
+<span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="n">newArr</span><span class="o">=</span><span class="n">Arrays</span><span class="p">.</span><span class="na">copyOf</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="mi">4</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">newArr</span><span class="p">));</span>
 <span class="c1">// 方法二</span>
-<span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">[</span><span class="mi">5</span><span class="o">]</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="o">[]</span><span class="n">a</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[</span><span class="mi">5</span><span class="o">]</span><span class="p">;</span>
 <span class="c1">// 原数组 起始位置 目标数组 起始位置 复制个数</span>
-<span class="n">System</span><span class="p">.</span><span class="na">arraycopy</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">a</span><span class="p">));</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">arraycopy</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">a</span><span class="p">));</span>
 </code></pre></div>
 <h2 id="lengthsize">length与size的区别</h2>
 <ol>
@@ -951,14 +1023,14 @@
 <li>如果子类的构造方法没有显式调用<code>super()</code>，Java会默认调用父类的无参构造方法。</li>
 </ol>
 <h2 id="brak">brak高级用法</h2>
-<div class="highlight"><pre><span></span><code><span class="w">   </span><span class="n">outerLoop</span><span class="p">:</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">       </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">           </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;i: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, j: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j</span><span class="p">);</span>
-<span class="w">           </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">               </span><span class="k">break</span><span class="w"> </span><span class="n">outerLoop</span><span class="p">;</span><span class="w"> </span><span class="c1">// 使用标签跳出外层循环</span>
-<span class="w">           </span><span class="p">}</span>
-<span class="w">       </span><span class="p">}</span>
-<span class="w">   </span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="w">   </span><span class="n">outerLoop</span><span class="p">:</span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">3</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="mi">3</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;i: &quot;</span><span class="o">+</span><span class="n">i</span><span class="o">+</span><span class="s">&quot;, j: &quot;</span><span class="o">+</span><span class="n">j</span><span class="p">);</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="mi">2</span><span class="o">&amp;&amp;</span><span class="n">j</span><span class="o">==</span><span class="mi">2</span><span class="p">){</span>
+<span class="w">        </span><span class="k">break</span><span class="w"> </span><span class="n">outerLoop</span><span class="p">;</span><span class="w"> </span><span class="c1">// 使用标签跳出外层循环</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
 </code></pre></div>
 <h2 id="stringapi">String的api</h2>
 <ol>
@@ -966,70 +1038,86 @@
 </ol>
 <h2 id="stringbuilder-stringbuffer"><code>StringBuilder</code> 和 <code>StringBuffer</code></h2>
 <ol>
-<li>线程安全性：</li>
-<li><code>StringBuilder</code>：是非线程安全的，适合在单线程环境下使用。由于它不需要考虑线程同步，因此在单线程情况下性能更高。</li>
 <li>
-<p><code>StringBuffer</code>：是线程安全的，适合在多线程环境下使用。它的方法都是同步的，可以确保多个线程同时操作时不会出现数据混乱的情况。</p>
+<p>线程安全性：</p>
+<ul>
+<li><code>StringBuilder</code>：是非线程安全的，适合在单线程环境下使用。由于它不需要考虑线程同步，因此在单线程情况下性能更高。</li>
+<li><code>StringBuffer</code>：是线程安全的，适合在多线程环境下使用。它的方法都是同步的，可以确保多个线程同时操作时不会出现数据混乱的情况。</li>
+</ul>
 </li>
 <li>
 <p>性能：</p>
-</li>
+<ul>
 <li><code>StringBuilder</code>：由于不需要线程同步，所以在单线程环境下通常比 <code>StringBuffer</code> 更快。</li>
 <li><code>StringBuffer</code>：由于需要线程同步，所以在多线程环境下能够保证数据的一致性，但性能通常比 <code>StringBuilder</code> 稍差。</li>
+</ul>
+</li>
 </ol>
-<p>在选择使用 <code>StringBuilder</code> 还是 <code>StringBuffer</code> 时，通常考虑以下因素：
-- 如果在单线程环境下操作字符串，建议使用 <code>StringBuilder</code>，以获得更好的性能。
-- 如果在多线程环境下操作字符串，需要确保线程安全性时，使用 <code>StringBuffer</code>。</p>
+<p>在选择使用 <code>StringBuilder</code> 还是 <code>StringBuffer</code> 时，通常考虑以下因素：</p>
+<ul>
+<li>如果在单线程环境下操作字符串，建议使用 <code>StringBuilder</code>，以获得更好的性能。</li>
+<li>如果在多线程环境下操作字符串，需要确保线程安全性时，使用 <code>StringBuffer</code>。</li>
+</ul>
 <h1 id="exception">Exception</h1>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="p">);</span>
-<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;结果出来了&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IndexOutOfBoundsException</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">i</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span><span class="w">  </span><span class="c1">// printStackTrace()打印异常信息</span>
-<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;i数组越界了&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">Exception</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span><span class="w">  </span><span class="c1">// printStackTrace()打印异常信息</span>
-<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;e数组越界了&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">finally</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
-<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;关闭资源&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;结果出来了&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="k">catch</span><span class="p">(</span><span class="n">IndexOutOfBoundsException</span><span class="w"> </span><span class="n">i</span><span class="p">){</span>
+<span class="w">        </span><span class="n">i</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span><span class="w">  </span><span class="c1">// printStackTrace()打印异常信息</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;i数组越界了&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="k">catch</span><span class="p">(</span><span class="n">Exception</span><span class="w"> </span><span class="n">e</span><span class="p">){</span>
+<span class="w">        </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span><span class="w">  </span><span class="c1">// printStackTrace()打印异常信息</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;e数组越界了&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="k">finally</span><span class="p">{</span>
+<span class="w">        </span><span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;关闭资源&quot;</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 </code></pre></div>
 <ol>
-<li>首先，程序尝试执行 <code>System.out.println(arr[index]);</code> </li>
+<li>首先，程序尝试执行 <code>System.out.println(arr[index]);</code></li>
 <li>这行代码，如果 <code>index</code> 超出了数组 <code>arr</code> 的索引范围，就会抛出 <code>IndexOutOfBoundsException</code> 异常。</li>
 <li>接下来，程序会捕获异常。它先检查是否是 <code>IndexOutOfBoundsException</code> 类型的异常，</li>
 <li>如果是，就执行 <code>catch (IndexOutOfBoundsException i)</code> 块中的代码，打印出异常信息，然后显示 "i数组越界了"。</li>
-<li>如果异常不是 <code>IndexOutOfBoundsException</code>，而是其他类型的异常，程序会进入 <code>catch (Exception e)</code> 块，同样打印出异常信息，然后显示 "e数组越界了"。</li>
-<li>无论是哪种情况，最终都会执行 <code>finally</code> 块中的代码。这个块中的代码用于关闭资源（这里是关闭 <code>Scanner</code> 对象），然后显示 "关闭资源"。</li>
+<li>如果异常不是 <code>IndexOutOfBoundsException</code>，而是其他类型的异常，程序会进入 <code>catch (Exception e)</code>
+   块，同样打印出异常信息，然后显示 "e数组越界了"。</li>
+<li>无论是哪种情况，最终都会执行 <code>finally</code> 块中的代码。这个块中的代码用于关闭资源（这里是关闭 <code>Scanner</code> 对象），然后显示 "
+   关闭资源"。</li>
 </ol>
 <h1 id="arraylist">ArrayList</h1>
 <ol>
-<li><code>arr.addAll(arr1);</code></li>
+<li><code>arr.addAll(arr1);</code><ul>
 <li>这行代码将集合 <code>arr1</code> 中的所有元素添加到集合 <code>arr</code> 中。</li>
-<li><code>arr.removeAll(arr1);</code></li>
+</ul>
+</li>
+<li><code>arr.removeAll(arr1);</code><ul>
 <li>这行代码从集合 <code>arr</code> 中删除所有存在于集合 <code>arr1</code> 中的元素。</li>
-<li><code>arr.toArray();</code></li>
+</ul>
+</li>
+<li><code>arr.toArray();</code><ul>
 <li>这行代码将集合 <code>arr</code> 中的元素转换为一个数组</li>
+</ul>
+</li>
 </ol>
 <h2 id="_6">迭代器遍历</h2>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">list</span><span class="p">.</span><span class="na">iterator</span><span class="p">();</span>
-<span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="p">.</span><span class="na">hasNext</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="c1">// 是否具有下一个元素</span>
-<span class="w">            </span><span class="n">Integer</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">it</span><span class="p">.</span><span class="na">next</span><span class="p">();</span>
-<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">it</span><span class="o">=</span><span class="n">list</span><span class="p">.</span><span class="na">iterator</span><span class="p">();</span>
+<span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">it</span><span class="p">.</span><span class="na">hasNext</span><span class="p">()){</span><span class="c1">// 是否具有下一个元素</span>
+<span class="w">        </span><span class="n">Integer</span><span class="w"> </span><span class="n">num</span><span class="o">=</span><span class="n">it</span><span class="p">.</span><span class="na">next</span><span class="p">();</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
 <span class="w">        </span><span class="p">}</span>
 </code></pre></div>
 <h2 id="_7">自定义排序</h2>
-<p><div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">TreeSet</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span><span class="w"> </span><span class="n">set</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TreeSet</span><span class="o">&lt;&gt;</span><span class="p">((</span><span class="n">o1</span><span class="p">,</span><span class="w"> </span><span class="n">o2</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">o1</span><span class="p">.</span><span class="na">getName</span><span class="p">().</span><span class="na">length</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">o2</span><span class="p">.</span><span class="na">getName</span><span class="p">().</span><span class="na">length</span><span class="p">();</span>
-<span class="w">            </span><span class="k">return</span><span class="w">  </span><span class="n">i</span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">o1</span><span class="p">.</span><span class="na">getAge</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">o2</span><span class="p">.</span><span class="na">getAge</span><span class="p">()</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">TreeSet</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span><span class="w"> </span><span class="n">set</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="n">TreeSet</span><span class="o">&lt;&gt;</span><span class="p">((</span><span class="n">o1</span><span class="p">,</span><span class="n">o2</span><span class="p">)</span><span class="o">-&gt;</span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="n">o1</span><span class="p">.</span><span class="na">getName</span><span class="p">().</span><span class="na">length</span><span class="p">()</span><span class="o">-</span><span class="n">o2</span><span class="p">.</span><span class="na">getName</span><span class="p">().</span><span class="na">length</span><span class="p">();</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">i</span><span class="o">==</span><span class="mi">0</span><span class="o">?</span><span class="n">o1</span><span class="p">.</span><span class="na">getAge</span><span class="p">()</span><span class="o">-</span><span class="n">o2</span><span class="p">.</span><span class="na">getAge</span><span class="p">():</span><span class="n">i</span><span class="p">;</span>
 <span class="w">        </span><span class="p">});</span>
 </code></pre></div>
-1. <strong>有序性</strong>
-2. <strong>唯一性</strong>
-3. <strong>基于红黑树实现</strong>：<code>TreeSet</code> 的底层数据结构是一颗红黑树。这保证了元素的插入、删除和查找的时间复杂度都是 O(log n)。
-4. <strong>不允许 null 元素</strong>：由于要保持有序性，<code>TreeSet</code> 不允许插入 null 元素。
-5. <strong>快速查找</strong>：由于底层数据结构是一颗二叉搜索树，<code>TreeSet</code> 提供了快速的查找操作。
-6. <strong>不是线程安全的</strong>：如果多个线程同时访问一个 <code>TreeSet</code> 实例，并且至少有一个线程在结构上修改了集合，那么它必须保持外部同步。</p>
+<ol>
+<li><strong>有序性</strong></li>
+<li><strong>唯一性</strong></li>
+<li><strong>基于红黑树实现</strong>：<code>TreeSet</code> 的底层数据结构是一颗红黑树。这保证了元素的插入、删除和查找的时间复杂度都是 O(log n)。</li>
+<li><strong>不允许 null 元素</strong>：由于要保持有序性，<code>TreeSet</code> 不允许插入 null 元素。</li>
+<li><strong>快速查找</strong>：由于底层数据结构是一颗二叉搜索树，<code>TreeSet</code> 提供了快速的查找操作。</li>
+<li><strong>不是线程安全的</strong>：如果多个线程同时访问一个 <code>TreeSet</code> 实例，并且至少有一个线程在结构上修改了集合，那么它必须保持外部同步。</li>
+</ol>
 <h2 id="arraysaslistarrcollections"><code>Arrays.asList(arr)</code>和<code>Collections</code></h2>
 <ol>
 <li><code>Arrays.asList(arr)</code> 将数组转换为一个固定大小的列表。这意味着你不能对这个列表进行增删操作。</li>
@@ -1067,6 +1155,7 @@
 <div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Test</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// 定义票的个数</span>
 <span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
+
 <span class="w">    </span><span class="nd">@Override</span>
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">run</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -1091,14 +1180,16 @@
 </blockquote>
 <h3 id="2">线程安全2</h3>
 <blockquote>
-<p>Runnable接口实现方式
+<p>Runnable接口实现方式</p>
+</blockquote>
 <div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">TicketDemo</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">Runnable</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+
 <span class="w">    </span><span class="nd">@Override</span>
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">run</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="kd">synchronized</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">){</span>
-<span class="w">                </span><span class="k">if</span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">){</span>
+<span class="w">            </span><span class="kd">synchronized</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                        </span><span class="n">Thread</span><span class="p">.</span><span class="na">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
 <span class="w">                    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">InterruptedException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -1111,8 +1202,7 @@
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div></p>
-</blockquote>
+</code></pre></div>
 <h1 id="_10">文件操作</h1>
 <h2 id="file">File</h2>
 <ol>
@@ -1215,6 +1305,21 @@
             </div>
           </a>
         
+        
+          
+          <a href="../../Problem/LeetCode/" class="md-footer__link md-footer__link--next" aria-label="下一页: LeetCode" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                LeetCode
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
