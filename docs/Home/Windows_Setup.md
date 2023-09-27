@@ -7,7 +7,7 @@
 ## 下载 ToolDiy
 
 ```
-git clone https://github.com/cargo-youth/ToolDiy.git
+git clone https://github.com/Risingrode/USTL_ACM.git
 ```
 
 ## 安装 mkdocs
@@ -48,11 +48,13 @@ mkdocs serve
 mkdocs build
 ```
 
-
+## 一键推送
 ```
 mkdocs gh-deploy
 ```
 会在GitHub项目上创建一个gh-pages分支，并执行mkdocs build命令，然后将当前目录中的site目录下的内容推送到远程的gh-pages分支
+
+## 注意
 
 
 

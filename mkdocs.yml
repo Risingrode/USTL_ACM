@@ -1,10 +1,11 @@
 site_name: USTL-ACM算法合集
 site_url: https://github.com/Risingrode/USTL_ACM
+site_author: ACM校队
 
 repo_name: USTL-ACM算法合集
 repo_url: https://github.com/Risingrode/USTL_ACM
 
-edit_uri: blob/main/docs/
+edit_uri: blob/master/docs/
 
 # 主题设置
 theme:
@@ -49,32 +50,43 @@ plugins:
         zh:
           name: 简体中文
           build: true
-        en:
-          name: English
-          build: false
-      nav_translations:
-        zh:
-          # 格式是：文件夹名字 + 中文替换名
-          One click deployment : 一键部署
-          Markdown : Markdown 规范
-          Preface : 前言
-          Specification : 规范
+#      nav_translations:
+#        # 格式是： 中文替换名 + 文件夹名字
+#        首页 : Home
+#        Markdown规范 : Markdown
 
-        # en:
-        #   前言 : Preface
-        #   规范 : Specification
-        #   PR规范 : PR Specification
-        #   中英混排 : Chinese With English
-        #   写作模板 : Writing Template
-        #   软件 : Software
-        #   插件 : Plugins
-        #   平台 : Platform
-        #   一键部署 : One-Click Deployment
-        #   开源框架 : Opensource Frame 
-        #   大语言模型 : Large Language Model
-        #   包管理器 : Package manager
   - search:
-      lang: ja
+      lang: zh
+
+
+
+
+nav:
+  # 格式是： 中文替换名 + 文件夹名字
+  - 首页 :
+    - 前言: Home/index.md
+    - Windows配置: Home/Windows_Setup.md
+  - Markdown规范 :
+    - Markdown: Markdown/markdown.md
+    - Latex: Markdown/latex.md
+  - 基础算法:
+    - 二分算法: Algo1/二分算法.md
+    - 贪心算法: Algo1/贪心算法.md
+    - 前缀和: Algo1/前缀和.md
+    - 双指针: Algo1/双指针.md
+    - 位运算: Algo1/位运算.md
+    - 排序算法: Algo1/排序算法.md
+    - 背包: Algo1/背包.md
+    - DFS: Algo1/DFS.md
+    - BFS: Algo1/BFS.md
+  - 算法模板:
+      - 基础算法模板: 知识点/基础算法模板.md
+  - 语言:
+    - C++: Language/C++.md
+    - Python: Language/Python.md
+    - Java: Language/Java.md
+
+
 
 # LaTeX支持
 markdown_extensions:
@@ -103,3 +115,9 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+
+
+
+
