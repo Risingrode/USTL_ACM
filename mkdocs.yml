@@ -34,29 +34,31 @@ theme:
     # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/?h=edit#code-actions
     - content.action.edit
     - content.tabs.link
+    - content.code.copy
 
 
 # 版权
-copyright: This website follows CC BY-SA 4.0
+copyright: 版权声明：USTL-fcw专属
 
 # 插件
 plugins:
   - awesome-pages:
       strict: false
-  - i18n:
-      default_language: zh
-      material_alternate: true
-      languages:
-        zh:
-          name: 简体中文
-          build: true
+  # - i18n:
+  #     default_language: zh
+  #     material_alternate: true
+  #     languages:
+  #       zh:
+  #         name: 简体中文
+  #         build: true
 #      nav_translations:
 #        # 格式是： 中文替换名 + 文件夹名字
 #        首页 : Home
 #        Markdown规范 : Markdown
-
   - search:
-      lang: zh
+      lang: en
+
+
 
 
 
@@ -64,7 +66,7 @@ plugins:
 nav:
   # 格式是： 中文替换名 + 文件夹名字
   - 首页 :
-    - 前言: Home/index.md
+    - 前言: index.md
     - Windows配置: Home/Windows_Setup.md
   - Markdown规范 :
     - Markdown: Markdown/markdown.md
@@ -85,6 +87,18 @@ nav:
     - C++: Language/C++.md
     - Python: Language/Python.md
     - Java: Language/Java.md
+  - 刷题:
+    - LeetCode: Problem/LeetCode.md
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -110,6 +124,7 @@ markdown_extensions:
       alternate_style: true
   - attr_list
   - md_in_html
+
 
 extra_javascript:
   - javascripts/mathjax.js

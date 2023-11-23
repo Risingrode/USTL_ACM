@@ -52,14 +52,21 @@ mkdocs build
 ```
 mkdocs gh-deploy
 ```
+
 会在GitHub项目上创建一个gh-pages分支，并执行mkdocs build命令，然后将当前目录中的site目录下的内容推送到远程的gh-pages分支
 
 ## 注意
 
+> 要搞这个项目，你需要一下内容:
+    - python
+    - git
+    - mkdocs
+    - github
 
 
+## 官方文档
 
-
+[点我](https://squidfunk.github.io/mkdocs-material/plugins/)
 
 
 
