@@ -12,7 +12,12 @@
 
 - fork我的项目
 ![](https://s2.loli.net/2023/11/24/vmAwM26FGKpztVg.png)
+
+
 - git到你的仓库
+
+
+每当你写完代码后想要提交的话，直接点击`buildAndPush`文件即可，一键提交，其他的就不用管了。
 
 
 
