@@ -57,11 +57,12 @@ mkdocs gh-deploy
 
 ## 注意
 
-> 要搞这个项目，你需要一下内容:
-    - python
-    - git
-    - mkdocs
-    - github
+要搞这个项目，你需要以下内容:
+
+- python
+- git
+- mkdocs
+- github
 
 
 ## 官方文档
