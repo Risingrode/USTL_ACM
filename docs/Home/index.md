@@ -4,7 +4,7 @@
 
  > 注意：这里需要用到python环境,本人是`python3.10`
 
-## 下载 ToolDiy
+## 下载 USTL_ACM
 
 ```
 git clone https://github.com/Risingrode/USTL_ACM.git
