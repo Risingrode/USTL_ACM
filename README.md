@@ -134,6 +134,16 @@ mkdocs gh-deploy
 
 
 
+## 同步到主网站
+
+下面这个地方是有`UPDATE按钮`，先更新一下。
+
+![](https://cwrisingblog.oss-cn-beijing.aliyuncs.com/ustl_acm/20231129232043.png)
+
+然后点击`Contribute`，点击绿色按钮，就可以同步到主网站了，申请通过就可以放到网站上面了🤣🤣🤣🤣。
+
+![](https://cwrisingblog.oss-cn-beijing.aliyuncs.com/ustl_acm/20231129232242.png)
+
 
 
 
