@@ -82,6 +82,8 @@ nav:
     - 背包: Algo1/背包.md
     - DFS: Algo1/DFS.md
     - BFS: Algo1/BFS.md
+    - Notice: Algo1/Notice.md
+    - Other: Algo1/其他算法.md
   - 算法模板:
       - 基础算法模板: 知识点/基础算法模板.md
   - 语言:

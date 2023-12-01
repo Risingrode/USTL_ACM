@@ -2,7 +2,7 @@
 
 !!! note 前言
 
-    本文提供了Markdown的基本撰写说明。因为主题设置的缘故可能会导致某些效果不生效，遇到此问题请前往 [issues](https://github.com/cargo-youth/ToolDiy/issues) 进行反馈。
+    本文提供了Markdown的基本撰写说明。因为主题设置的缘故可能会导致某些效果不生效，遇到此问题请前往 issues进行反馈。
 
 ## 标题
 
@@ -197,5 +197,5 @@ sequenceDiagram
         John-->>Alice: Great!
         John->>Bob: How about you?
         Bob-->>John: Jolly good!
-    ```
+```
 ```
