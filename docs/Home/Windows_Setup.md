@@ -59,10 +59,10 @@ mkdocs gh-deploy
 
 要搞这个项目，你需要以下内容:
 
-- python
-- git
-- mkdocs
-- github
+- [x] python
+- [x] git
+- [x] mkdocs
+- [x] github
 
 
 ## 官方文档
