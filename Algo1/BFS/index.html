@@ -74,6 +74,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#bfs" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -623,10 +628,91 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          BFS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         BFS
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    一、前置知识点：
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bfs_1" class="md-nav__link">
+    二、BFS常用于解决的问题：
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    三、代码模板
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    四、相关讲解
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    五、相关题目
+  </a>
+  
+    <nav class="md-nav" aria-label="五、相关题目">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    求最短路径/最优计划
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flood-fill" class="md-nav__link">
+    flood fill 连通块统计相关
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -859,6 +945,71 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    一、前置知识点：
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bfs_1" class="md-nav__link">
+    二、BFS常用于解决的问题：
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    三、代码模板
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    四、相关讲解
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    五、相关题目
+  </a>
+  
+    <nav class="md-nav" aria-label="五、相关题目">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    求最短路径/最优计划
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flood-fill" class="md-nav__link">
+    flood fill 连通块统计相关
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -882,9 +1033,48 @@
   
 
 
-  <h1>BFS</h1>
+<h1 id="bfs">BFS(宽度优先遍历)</h1>
+<h2 id="_1">一、前置知识点：</h2>
+<p>数据结构：队列queue</p>
+<h2 id="bfs_1">二、BFS常用于解决的问题：</h2>
+<p>1.求最短路/最优计划(要求每次的代价相同)</p>
+<p>2.常用于统计连通块等问题(flood fill)算法</p>
+<h2 id="_2">三、代码模板</h2>
+<div class="highlight"><pre><span></span><code><span class="n">queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">q</span><span class="p">;</span>
 
+<span class="n">st</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// 表示1号点已经被遍历过</span>
 
+<span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
+<span class="w">    </span><span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">h</span><span class="p">[</span><span class="n">t</span><span class="p">];</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ne</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">e</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">st</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">st</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// 表示点j已经被遍历过</span>
+<span class="w">            </span><span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">j</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="_3">四、相关讲解</h2>
+<p>AcWing算法基础课：第三讲-搜索与图论</p>
+<h2 id="_4">五、相关题目</h2>
+<h3 id="_5">求最短路径/最优计划</h3>
+<ol>
+<li><a href="https://www.luogu.com.cn/problem/B3625">B3625 迷宫寻路 - 洛谷 | 计算机科学教育新生态 </a></li>
+<li><a href="https://www.lanqiao.cn/problems/2222/learning/?page=1&amp;first_category_id=1&amp;sort=students_count&amp;tags=BFS">迷宫 - 蓝桥云课 (lanqiao.cn)</a></li>
+<li><a href="https://www.acwing.com/problem/content/846/">844. 走迷宫 - AcWing题库</a> （模板题）</li>
+<li><a href="https://www.acwing.com/problem/content/847/">845. 八数码 - AcWing题库</a></li>
+</ol>
+<h3 id="flood-fill">flood fill 连通块统计相关</h3>
+<ol>
+<li><a href="http://39.106.70.121/problem/521E">USTL OJ | 统计个数</a></li>
+<li><a href="https://pintia.cn/problem-sets/994805046380707840/exam/problems/1649748772841508875?type=7&amp;page=1">PTA | 程序设计类实验辅助教学平台 (pintia.cn)</a></li>
+<li><a href="https://www.acwing.com/problem/content/1235/">1233. 全球变暖 - AcWing题库</a></li>
+</ol>
 
 
 
