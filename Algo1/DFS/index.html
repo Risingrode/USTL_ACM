@@ -617,9 +617,75 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          DFS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         DFS
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dfs_1" class="md-nav__link">
+    DFS搜索方式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    相关题目
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    全排列
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pta" class="md-nav__link">
+    树相关搜索（PTA 甲级有很多相关的题目）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    树的前序遍历、中序遍历、后序遍历等...
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    枚举方案等
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -869,6 +935,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dfs_1" class="md-nav__link">
+    DFS搜索方式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    相关题目
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    全排列
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pta" class="md-nav__link">
+    树相关搜索（PTA 甲级有很多相关的题目）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    树的前序遍历、中序遍历、后序遍历等...
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    枚举方案等
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -895,7 +1011,7 @@
 <blockquote>
 <p>DFS 为图论中的概念，在搜索算法中，该词常常指利用递归函数方便地实现暴力枚举的算法，与图论中的 DFS 算法有一定相似之处，但并不完全相同。DFS也就是通常同学们口中的暴力，写好DFS对蓝桥杯之类的OI赛制比赛有很大的帮助</p>
 </blockquote>
-<h1 id="dfs_1">DFS搜索方式</h1>
+<h2 id="dfs_1">DFS搜索方式</h2>
 <p>e.x.:一只老鼠走迷宫</p>
 <p>在每个路口，它都选择先走右边（当然，选择先走左边也可以），能走多远就走多远；</p>
 <p>如果碰壁无法再继续往前走，就回退一步，这一次走左边，然后继续往下走。</p>
@@ -903,7 +1019,7 @@
 <p>这就是DFS。DFS就是一条路走到底，只有走到没有路可以走了才会返回，否则会一直搜索下去。</p>
 <p>由于DFS较为灵活，没有什么固定的模版，本章只给大家列出一些经典的DFS题目供大家去练习。</p>
 <p>DFS一般使用的情况为:题目要求输出所有的方案/情况等。当数据范围很小时可以考虑使用(一般小于100)</p>
-<h1 id="_1">相关题目</h1>
+<h2 id="_1">相关题目</h2>
 <h2 id="_2">全排列</h2>
 <ul>
 <li><a href="https://www.luogu.com.cn/problem/P1706">P1706 全排列问题 - 洛谷 | 计算机科学教育新生态 (luogu.com.cn)</a></li>
@@ -1058,7 +1174,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.top", "navigation.sections", "content.action.edit", "content.tabs.link", "content.code.copy"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.top", "navigation.sections", "content.action.edit", "content.tabs.link", "content.code.copy", "navigation.current", "navigation.collapsible", "toc"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
