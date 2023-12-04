@@ -36,6 +36,10 @@ theme:
     - content.action.edit
     - content.tabs.link
     - content.code.copy
+    # 右侧大纲
+    - navigation.current
+    - navigation.collapsible
+    - toc
 
 
 # 版权
